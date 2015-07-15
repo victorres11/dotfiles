@@ -1,0 +1,28 @@
+[user]
+	name = Victor Torres
+	email = victor@adroll.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[push]
+    default = tracking
+[log]
+    decorate = short
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+        staged = diff --cached
+        patch = add --patch
+        oneline = log --oneline
+        ten = log --oneline -10
+[core]
+	excludesfile = /Users/AdRoll_Air/.gitignore_global
+[apply]
+    whitespace = fix
